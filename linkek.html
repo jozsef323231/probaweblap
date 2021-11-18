@@ -1,0 +1,137 @@
+<html lang="hu">
+
+<head>
+
+</head>
+
+<body>
+    <table border="1">
+        <tr><h1>
+            <th colspan="6">Lakatos István József</th>
+            </h1>
+        </tr>
+        <tr>
+            <th>Menü</th>
+            <th colspan="5" rowspan="8">    <h1>Linkek!</h1>
+                <h4>Egyszerű link:</h4>
+                <a href="fooldal.html" target="_blank">Főoldal</a>
+                <br />
+                <a href="http://www.gepeszeti.hu" target="_blank">A gépészeti honlapja</a>
+                <h4>Linkek felsorolásként</h4>
+                <ul>
+                    <li>
+                        YOUTUBE
+                        <a href="http://www.youtube.com" target="_blank" title="youtube"><img src="\proggyak9a/website/images/Névtelen2.png"></a>
+                    </li>
+                    <li>
+                        OKTATAS
+                        <a href="http://www.oktatas.com" target="_blank" title="oktatas"><img src="\proggyak9a/website/images/Névtelen2.png"></a>
+                    </li>
+                    <li>
+                        W3schools
+                        <a href="http://www.w3schools.com" target="_blank" title="w3school"><img src="\proggyak9a/website/images/Névtelen2.png"></a>
+                    </li>
+                    <li>
+                        TIKTOK
+                        <a href="http://www.tiktok.com" target="_blank" title="tiktok"><img src="\proggyak9a/website/images/Névtelen2.png"></a>
+                    </li>
+                    <li>
+                        Gépészeti Weboldala
+                        <a href="http://www.gepeszeti.hu" target="_blank" title="Gépészeti"><img src="\proggyak9a/website/images/Névtelen2.png"></a>
+                    </li>
+                </ul>
+                
+            <style>
+            .accordion {
+              background-color: #eee;
+              color: #444;
+              cursor: pointer;
+              padding: 18px;
+              width: 100%;
+              border: none;
+              text-align: left;
+              outline: none;
+              font-size: 15px;
+              transition: 0.4s;
+            }
+            
+            .active, .accordion:hover {
+              background-color: #ccc;
+            }
+            
+            .panel {
+              padding: 0 18px;
+              background-color: white;
+              max-height: 0;
+              overflow: hidden;
+              transition: max-height 0.2s ease-out;
+            }
+            </style>
+            
+            <button class="accordion">Link1</button>
+            <div class="panel">
+              <p><a href="https://youtube.com" target="_blank" title="youtube-ra vezet!"><img src="\proggyak9a/website/images/Névtelen2.png"></a></p>
+            </div>
+            
+            <button class="accordion">Link2</button>
+            <div class="panel">
+              <p></p>
+            </div>
+            
+            <button class="accordion">Link3</button>
+            <div class="panel">
+              <p></p>
+            </div>
+            
+            <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+            
+            for (i = 0; i < acc.length; i++) {
+              acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                  panel.style.maxHeight = null;
+                } else {
+                  panel.style.maxHeight = panel.scrollHeight + "px";
+                } 
+              });
+            }
+            </script>
+            
+                
+                <h4>Linkek képekre</h4>
+                <a href="\proggyak9a/website/images/Névtelen.png" target="_blank">Ez egy link képre</a>
+            
+                <h4>Képek linkként működve</h4>
+                <a href="http://www.oktatas.hu" target="_blank" title="OLDAL"><img src="\proggyak9a/website/images/Névtelen2.png"></a>
+            
+            
+            </th>
+        </tr>
+        <tr>
+            <th><a href="index.html">Főoldal</a></th>
+        </tr>
+        <tr>
+            <th><a href="cimsor.html">Címsorok</a></th>
+        </tr>
+        <tr>
+            <th><a href="listak.html">Listák</a></th>
+        </tr>
+        <tr>
+            <th><a href="tablazat.html">Táblázat</a></th>
+        </tr>
+        <tr>
+            <th><a href="osszevonasok.html">Összevonások</a></th>
+        </tr>
+        <tr>
+            <th><a href="linkek.html">Linkek</a></th>
+        </tr>
+        <tr>
+            <th><a href="belsolinkek.html">Belső Linkek</a></th>
+        </tr>
+    </table>
+</body>
+
+</html>
